@@ -1,0 +1,63 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-buttons>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+      <ion-icon name="search"></ion-icon>
+      <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <section>
+    <div class="ad">
+      <div class="discount w-50 text-center">
+        <div class="text mx-auto">
+          <p>Lorem Ipsum</p>
+          <p class="percent w-100">20<span>%</span></p>
+          <p>DOLAR AMET</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cat">
+    <div class="categories">
+      <div class="category" *ngFor="let n of data; let i = index">
+        <div class="item" *ngIf="i < 2">
+          <img [src]="n.category_img">
+          <div (click)="goToCategory(n.id)" class="layer"></div>
+          <div class="name">
+            <p (click)="goToCategory(n.id)">{{n.name}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="adver text-center pt-1">
+      <p>Proin Vestiblum eros ipsum.<br>in alteque elit interdum et.</p>
+    </div>
+    <div class="categories">
+      <div class="category" *ngFor="let n of data; let i = index">
+        <div class="item" *ngIf="i >= 2">
+          <img [src]="n.category_img">
+          <div (click)="goToCategory(n.id)" class="layer"></div>
+          <div class="name">
+          <p (click)="goToCategory(n.id)">{{n.name}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>     
+ 
+</ion-content>

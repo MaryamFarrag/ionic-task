@@ -1,0 +1,38 @@
+page-product {
+    .img{
+        padding:10px;
+        width:100%;
+        position: relative;
+        img{
+            width:100%;
+        }
+        .layer{
+            position: absolute;
+            background-color: rgba(0,0,0,.3);
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+        }
+    }
+    p.name{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    p.weight,p.price{
+        float:right;
+        padding:0;
+        margin:0;
+    }
+    .clearfix{
+        clear:both;
+    }
+    button{
+        padding:.7rem 1rem;
+        background-color:rgb(233, 85, 85);
+        color:#fff;
+        margin-left:5px;
+    }
+
+}

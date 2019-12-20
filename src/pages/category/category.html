@@ -1,0 +1,37 @@
+<!--
+  Generated template for the CategoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{title}}</ion-title>
+    <ion-buttons end>
+      <ion-icon name="search"></ion-icon>
+      <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <header>
+    <img [src]="img">
+    <div class="layer">
+    </div>
+  </header>
+  <section id="products">
+    <div class="product" *ngFor="let n of data">
+      <div class="item">
+        <img (click)="goToProduct(n.id)" [src]="n.product_img">
+      <div class="info">
+        <p class="name" (click)="goToProduct(n.id)">{{n.name}}</p>
+        <p class="weight">{{n.weight}}</p>
+        <p class="float-left price">{{n.price}}</p>
+        <ion-icon class="float-right add" name="add-circle"></ion-icon>
+      </div>
+    </div>
+      
+    </div>
+  </section>
+</ion-content>

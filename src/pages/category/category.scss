@@ -1,0 +1,56 @@
+page-category {
+    ion-icon{
+        margin:0 10px;
+    }
+    header{
+        position: relative;
+        .layer{
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background-color: rgba(0, 0, 0, .5);
+        }
+    }
+    #products{
+        display: flex;
+        flex-wrap: wrap;
+        .product{
+            width:50%;
+            padding:3px;
+            height:100%;
+            position: relative;
+        }
+        .item{
+            height:100%;
+            img{
+                height:11rem;
+                width:100%;
+            }
+            .info{
+                p.name{
+                    color:#000;
+                    font-weight: 700;
+                    font-size:1.6rem;
+                    margin:0;
+                }
+                p.weight,p.price{
+                    color:rgb(44, 44, 44);
+                    font-size: 1rem;
+                    margin:0;
+                }
+                .float-right{
+                    float:right;
+                }
+                .float-left{
+                    float: left;
+                }
+                .add{
+                    color:rgb(158, 158, 158);
+                }
+            }
+        }
+    }
+
+}

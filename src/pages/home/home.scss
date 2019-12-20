@@ -1,0 +1,93 @@
+page-home {
+    ion-icon{
+        margin:0 10px;
+    }
+    ion-content{
+        margin-top: 0;
+        .ad{
+            background-image: url("../../assets/imgs/bg-3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color:#fff;
+            height: 250px;
+        }
+        .discount{
+            padding:1px;
+            .text{
+                width:50%;
+                border: 3px #fff solid;
+                background-color: rgba(0,0,0,.5);
+                margin:40px 0 0 30px;
+                padding-left: 7px;
+                p{
+                    font-size: 1rem;
+                    text-align: center;
+                    margin: 0 !important;
+                    padding-top:1rem;
+                }
+                .percent{
+                    font-size: 10rem;
+                    display: block;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+        }
+        .categories{
+            display: flex;
+            flex-wrap: wrap; 
+            .category{
+                width:50%;
+                padding:3px;
+                height:100%;
+                position: relative;
+                .item{
+                    height:100%;
+                    img{
+                        height:11rem;
+                        width:100%;
+                    }
+                    .layer{
+                        position: absolute;
+                        background-color: rgba(0,0,0,.25);
+                        top:0;
+                        bottom:0;
+                        height:100%;
+                        width:100%;
+                    }
+                    .name{
+                        position: absolute;
+                        color:#fff;
+                        bottom:0rem;
+                        padding-left:5px!important;
+                        margin:0!important;
+                    }
+                }
+            }
+        }
+        .adver{
+            width: 100%;
+            background-color: rgb(255, 255, 80);
+            padding:10px;
+            text-align: center  ;
+            font-family: cursive;
+            p{
+                margin:0!important;
+            }
+        }
+    }
+}
+@media(min-width:700px){
+    page-home{
+        ion-content{
+            .categories{
+                padding:4rem 10rem;
+                .category{
+                    width:25%;
+                }
+            }
+        }
+    }
+}
